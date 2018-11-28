@@ -11,3 +11,8 @@ Logi, raportowanie błędów <br/>
 ~~Wyświetlanie danych na serwerze~~ <br/>
 ~~Ogarniecie kodu (podział na funkcje, osobne pliki)~~ <br/>
 Dodanie formatowania w CSS bo bieda<br/> 
+
+# Jak działa?
+1. Uruchom main.py i podążaj na wskazówkami
+2. Uruchom serverHTTP
+3. Połącz się do 127.0.0.1:8000
