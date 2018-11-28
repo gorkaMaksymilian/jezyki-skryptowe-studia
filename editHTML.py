@@ -3,7 +3,7 @@ import codecs
 
 
 def createIndex():
-    scaffolding='<!DOCTYPE html><html><head><meta http-equiv="refresh" content="35"><title>Projekt</title></head><body></body></html>'
+    scaffolding='<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="mystyle.css"><meta http-equiv="refresh" content="35"><title>Projekt</title></head><body></body></html>'
     basicHTML=open("index.html","w")
     basicHTML.write(scaffolding)
     basicHTML.close()
