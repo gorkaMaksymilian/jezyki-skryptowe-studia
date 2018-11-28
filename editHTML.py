@@ -21,20 +21,18 @@ def insertData(numerElement,przystanekElement,czasElement,counter,nazwa):
         newDisplay.string="Wybrany przystanek: "+nazwa
         soup.body.append(newDisplay)
     
-    newTag = soup.new_tag("div",id=counter)
-    soup.body.append(newTag)
-    newA = soup.new_tag("a")
+    newA = soup.new_tag("p")
     newA.string=numerElement
-    newTag.append(newA)
+    soup.body.append(newA)
 
-    newA = soup.new_tag("a")
+    newA = soup.new_tag("p")
     newA.string=przystanekElement
-    newTag.append(newA)
+    soup.body.append(newA)
 
 
-    newA = soup.new_tag("a")
+    newA = soup.new_tag("p")
     newA.string=czasElement
-    newTag.append(newA)
+    soup.body.append(newA)
  
     
     file = codecs.open("index.html", "w", "utf-8")
