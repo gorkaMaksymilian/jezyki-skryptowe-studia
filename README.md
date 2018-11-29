@@ -9,6 +9,9 @@ Ogarniecie kodu (podział na funkcje, osobne pliki)<br/>
 
 # To do:
 Logi, raportowanie błędów <br/> 
+Obsługa błędów(czy port zajęty)<br/> 
+Logi z jednego miejsca <br/> 
+Konfiguracja w jednym miejscu(ta gdzie path logów)<br/> 
 ~~Wyświetlanie danych na serwerze~~ <br/>
 ~~Ogarniecie kodu (podział na funkcje, osobne pliki)~~ <br/>
 ~~Dodanie formatowania w CSS bo bieda~~<br/> 
