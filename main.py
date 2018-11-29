@@ -3,6 +3,8 @@ import findDatabase
 import syntaxCorrection
 import time
 import logging
+import sys
+sys.tracebacklimit=0
 logging.basicConfig(filename='main.log',level='INFO',format='%(asctime)s: %(levelname)s: %(message)s')
 
 logging.info('  Uruchomienie programu')
