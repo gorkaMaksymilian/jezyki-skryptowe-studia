@@ -1,25 +1,39 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import codecs
+import os
 
-class Serv(BaseHTTPRequestHandler):
-
+ 
+ 
+class StaticServer(BaseHTTPRequestHandler):
+ 
     def do_GET(self):
-        try:
-            file_to_open = codecs.open("index.html",encoding="utf-8").read()
-            self.send_response(200)
-        except:
-            file_to_open = "File not found"
-            self.send_response(404)
-        self.send_header('Content-type', 'text/html; charset=utf-8')
+        root =os.getcwd()
+        print(self.path)
+        if self.path == '/':
+            filename = root + '\index.html'
+        else:
+            filename = root + self.path
+ 
+        self.send_response(200)
+        if filename[-4:] == '.css':
+            self.send_header('Content-type', 'text/css')
+        else:
+            self.send_header('Content-type', 'text/html')
         self.end_headers()
-        self.wfile.write(bytes(file_to_open, 'utf-8'))
+        with codecs.open(filename,encoding="utf-8") as fh:
+            html = fh.read()
+            html = bytes(html, 'utf8')
+            self.wfile.write(html)
 
+ 
 
-myServer = HTTPServer(('localhost', 8000), Serv)
-print("Serwer działa: 127.0.0.1:8000")
+port=8000
+server_address = ('', port)
+httpCSS = HTTPServer(server_address, StaticServer)
+print('Serwer działa: localhost na porcie {}'.format(port))
+
 try:
-    myServer.serve_forever()
+	httpCSS.serve_forever()
 except KeyboardInterrupt:
-    pass
-
-myServer.server_close()
+	pass
+    
