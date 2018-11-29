@@ -1,7 +1,8 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import codecs
 import os
-
+import sys
+sys.tracebacklimit=0
  
  
 class StaticServer(BaseHTTPRequestHandler):
