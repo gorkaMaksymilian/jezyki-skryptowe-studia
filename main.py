@@ -2,13 +2,21 @@ import connectTTSS
 import findDatabase
 import syntaxCorrection
 import time
-import logging
 import sys
-sys.tracebacklimit=0
-logging.basicConfig(filename='main.log',level='INFO',format='%(asctime)s: %(levelname)s: %(message)s')
+import logging
+import default
 
-logging.info('  Uruchomienie programu')
-logging.info('  Sprawdzenie poprawnosci przystanku')
+logger=logging.getLogger(__name__)
+logger.setLevel(default.DEFAULT_LOG["level"])
+formatter=logging.Formatter(""+default.DEFAULT_LOG["formatter"]+"")
+file_handler = logging.FileHandler(""+default.DEFAULT_LOG["file"]+"")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
+
+sys.tracebacklimit=0
+logger.info('  Uruchomienie programu')
+logger.info('  Sprawdzenie poprawnosci przystanku')
 przystanekNazwa=input("Podaj nazwe przystanku:")
 #Tu dla unikania problemu ze wpisywaniem np "Dworzec główny" zamiast "Dworzec Główny"
 przystanekNazwa=przystanekNazwa.lower()
@@ -17,14 +25,14 @@ przystanekNazwa=przystanekNazwa.strip()
 
 #Szukanie numeru przystanku i zwracanie gotowego URL
 slownik=findDatabase.findInDatabase(przystanekNazwa)
-logging.info('  Sprawdzenie poprawnosci ilosci przystankow')
+logger.info('  Sprawdzenie poprawnosci ilosci przystankow')
 urlTTSS=slownik["a"]
 nazwa=slownik["b"]
 
 #Sprawdzanie poprawnosci ilosci przystankow
 liczbaPrzystankow=syntaxCorrection.inputCorrection()
 
-logging.info('  Nawiazywanie sesji')
+logger.info('  Nawiazywanie sesji')
 #Pobieranie i wypisanie danych z TTSS
 try:
     while True:
@@ -32,6 +40,6 @@ try:
         time.sleep(30)
 except KeyboardInterrupt:
     pass
-logging.info('  Zakonczenie sesji')
-logging.info('  Zakonczono program')
+logger.info('  Zakonczenie sesji')
+logger.info('  Zakonczono program')
 

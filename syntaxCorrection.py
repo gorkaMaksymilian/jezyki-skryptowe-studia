@@ -1,5 +1,11 @@
 import logging
-logging.basicConfig(filename='main.log',level='INFO',format='%(asctime)s: %(levelname)s: %(message)s')
+import default
+logger=logging.getLogger(__name__)
+logger.setLevel(default.DEFAULT_LOG["level"])
+formatter=logging.Formatter(""+default.DEFAULT_LOG["formatter"]+"")
+file_handler = logging.FileHandler(""+default.DEFAULT_LOG["file"]+"")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 def inputCorrection():
     liczbaPrzystankow=input("Podaj liczbe przystanków do wyswietlenia: ")
@@ -7,7 +13,7 @@ def inputCorrection():
     if(sprawdzanie == False):
         while (sprawdzanie == False):
             print('!!!Wpisz liczbe!!!')
-            logging.warning('  User podal litere zamiast liczby')
+            logger.info('  User podal litere zamiast liczby')
             liczbaPrzystankow=input("Podaj liczbe przystanków do wyswietlenia (>0 && <6): ")
             sprawdzanie=liczbaPrzystankow.isdigit()
     

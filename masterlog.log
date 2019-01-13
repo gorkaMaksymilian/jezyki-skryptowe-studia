@@ -1,0 +1,39 @@
+2019-01-10 14:12:35,803:INFO:__main__:  Uruchomienie programu
+2019-01-10 14:12:35,804:INFO:__main__:  Sprawdzenie poprawnosci przystanku
+2019-01-10 14:12:37,986:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:12:38,650:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:12:39,335:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:12:42,757:WARNING:findDatabase:  User podal prawidlowa nazwe przystanku
+2019-01-10 14:12:42,758:INFO:__main__:  Sprawdzenie poprawnosci ilosci przystankow
+2019-01-10 14:12:47,682:INFO:__main__:  Nawiazywanie sesji
+2019-01-10 14:15:07,024:INFO:__main__:port dla serwera jest wolny.
+2019-01-10 14:15:07,043:INFO:__main__:Serwer zosta³ uruchomiony prawid³owo
+2019-01-10 14:15:23,741:INFO:__main__:  Uruchomienie programu
+2019-01-10 14:15:23,742:INFO:__main__:  Sprawdzenie poprawnosci przystanku
+2019-01-10 14:15:25,968:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:15:26,515:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:15:26,927:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 14:15:28,358:WARNING:findDatabase:  User podal prawidlowa nazwe przystanku
+2019-01-10 14:15:28,359:INFO:__main__:  Sprawdzenie poprawnosci ilosci przystankow
+2019-01-10 14:15:29,427:INFO:__main__:  Nawiazywanie sesji
+2019-01-10 14:16:37,938:WARNING:__main__:Serwer zosta³ wy³aczony
+2019-01-10 16:37:04,993:INFO:__main__:port dla serwera jest wolny.
+2019-01-10 16:37:05,009:INFO:__main__:Serwer zosta³ uruchomiony prawid³owo
+2019-01-10 16:37:08,738:INFO:__main__:  Uruchomienie programu
+2019-01-10 16:37:08,738:INFO:__main__:  Sprawdzenie poprawnosci przystanku
+2019-01-10 16:37:12,028:WARNING:findDatabase:  User podal bledna nazwe przystanku
+2019-01-10 16:37:17,064:WARNING:findDatabase:  User podal prawidlowa nazwe przystanku
+2019-01-10 16:37:17,064:INFO:__main__:  Sprawdzenie poprawnosci ilosci przystankow
+2019-01-10 16:37:23,050:INFO:__main__:  Nawiazywanie sesji
+2019-01-13 14:42:27,833:INFO:__main__:port dla serwera jest wolny.
+2019-01-13 14:43:57,816:INFO:__main__:port dla serwera jest wolny.
+2019-01-13 14:44:04,793:INFO:__main__:  Uruchomienie programu
+2019-01-13 14:44:04,793:INFO:__main__:  Sprawdzenie poprawnosci przystanku
+2019-01-13 14:44:07,265:WARNING:findDatabase:  User podal prawidlowa nazwe przystanku
+2019-01-13 14:44:07,265:INFO:__main__:  Sprawdzenie poprawnosci ilosci przystankow
+2019-01-13 14:44:08,581:INFO:__main__:  Nawiazywanie sesji
+2019-01-13 14:44:29,792:INFO:__main__:  Zakonczenie sesji
+2019-01-13 14:44:29,792:INFO:__main__:  Zakonczono program
+2019-01-13 14:46:34,507:INFO:__main__:port dla serwera jest wolny.
+2019-01-13 14:46:35,353:INFO:__main__:Serwer zostal uruchomiony prawidlowo
+2019-01-13 14:46:40,359:WARNING:__main__:Serwer zostal wylaczony
