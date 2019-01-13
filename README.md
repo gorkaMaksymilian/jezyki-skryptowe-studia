@@ -8,10 +8,10 @@ CSS na HTTP<br/>
 Ogarniecie kodu (podział na funkcje, osobne pliki)<br/> 
 
 # To do:
-L̶o̶g̶i̶,̶ ̶r̶a̶p̶o̶r̶t̶o̶w̶a̶n̶i̶e̶ ̶b̶ł̶ę̶d̶ó̶w̶ ̶<̶b̶r̶/̶>̶ ̶
-̶O̶b̶s̶ł̶u̶g̶a̶ ̶b̶ł̶ę̶d̶ó̶w̶(̶c̶z̶y̶ ̶p̶o̶r̶t̶ ̶z̶a̶j̶ę̶t̶y̶)̶<̶b̶r̶/̶>̶ ̶
-̶L̶o̶g̶i̶ ̶z̶ ̶j̶e̶d̶n̶e̶g̶o̶ ̶m̶i̶e̶j̶s̶c̶a̶ ̶<̶b̶r̶/̶>̶ ̶
-̶K̶o̶n̶f̶i̶g̶u̶r̶a̶c̶j̶a̶ ̶w̶ ̶j̶e̶d̶n̶y̶m̶ ̶m̶i̶e̶j̶s̶c̶u̶(̶t̶a̶ ̶g̶d̶z̶i̶e̶ ̶p̶a̶t̶h̶ ̶l̶o̶g̶ó̶w̶)̶<̶b̶r̶/̶>̶ ̶
+Logi, raportowanie błędów <br/> 
+Obsługa błędów(czy port zajęty)<br/> 
+Logi z jednego miejsca <br/> 
+Konfiguracja w jednym miejscu(ta gdzie path logów)<br/> 
 ~~Wyświetlanie danych na serwerze~~ <br/>
 ~~Ogarniecie kodu (podział na funkcje, osobne pliki)~~ <br/>
 ~~Dodanie formatowania w CSS bo bieda~~<br/> 
